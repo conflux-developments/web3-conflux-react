@@ -41,6 +41,38 @@ That makes the version the first thing worth checking when something looks wrong
 
 This repository is one of the Conflux Wallet pages; the installation and update guides linked below carry the steps.
 
+## Who it is for
+
+- You are not sure which build is installed and want the current one without losing accounts.
+- The app stopped opening after an update and you need the order of checks.
+- You verify downloads and want the checksums in one place rather than in a chat message.
+
+## Your first ten minutes
+
+1. Note the version the app reports before you change anything, so the update has a baseline.
+2. Download the current installer for your system from the release page, not from a search result.
+3. Close the running app, install over the existing copy, and open it again.
+4. Confirm that the accounts, the password and the history are still there; the installer does not replace the key store.
+5. Compare the file you downloaded with the SHA-256 values published on the release page.
+
+## What this page covers, and what it does not
+
+This page covers installation, updates and what a version change does to an existing wallet. It does not document this repository's React components or their props, and it is not a changelog: the release page carries the version and the files, and the guides carry the steps. When a build will not open after an update, check the download size against the release page before reinstalling, because a partial download looks like a corrupt application. The release page lists the exact file name and size, and a browser's partial file often carries a different extension.
+
+## Questions before you download
+
+### Does installing a new version delete my accounts?
+
+No. The installer replaces the application and leaves the encrypted key store in place, so accounts and the password remain. The recovery phrase still restores the same accounts elsewhere.
+
+### Where are the checksums?
+
+On the release page, beside the installer files, and in the main application README. This page links there rather than copying values that change with every build.
+
+### Is the macOS or Linux build different from the Windows one?
+
+It is the same wallet packaged for another system, with the same accounts and the same two spaces. The install steps differ, and the platform guide covers each one.
+
 ---
 
 ## Guides
